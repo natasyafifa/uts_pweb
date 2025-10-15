@@ -1,0 +1,53 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section  */
+.hero {
+  background: url('../img/hero.jpg') center/cover no-repeat fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Menu Cards */
+.menu-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #f8f9fa;
+  padding: 50px 0;
+}
+
+/* Footer */
+.footer {
+  background: #212529;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer a {
+  color: #f8f9fa;
+  margin: 0 10px;
+  font-size: 18px;
+}
