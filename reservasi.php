@@ -94,7 +94,7 @@ $stmt->close();
                 <td class="p-2"><input type="text" name="special_request" value="<?= htmlspecialchars($r['special_request']) ?>" class="border rounded p-1"></td>
                 <td class="p-2">
                   <input type="hidden" name="reservation_id" value="<?= $r['reservation_id'] ?>">
-                  <button name="update_reservation" class="bg-yellow-400 text-white px-3 py-1 rounded">Ubah</button>
+                  <button name="update_reservation" class="bg-pink-400 text-white px-3 py-1 rounded">Simpan</button>
                   <a href="?delete_reservation=<?= $r['reservation_id'] ?>" onclick="return confirm('Hapus?')" class="bg-red-500 text-white px-3 py-1 rounded">Hapus</a>
                 </td>
               </form>

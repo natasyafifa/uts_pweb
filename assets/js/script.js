@@ -32,3 +32,21 @@ $("a.nav-link").on("click", function(e) {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    },
+    pagination: { el: '.swiper-pagination', clickable: true },
+  });
+});
+
+
